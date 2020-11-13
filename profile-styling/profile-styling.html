@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title>Profile Styling</title>
+
+	<style type="text/css">
+		/*
+			Primary color: #d81b60;
+			Primary darker color: #880e4f;
+
+			Sidebar width: 250px;
+
+			Padding across the site: 30px; ( smaller padding will be 15px or 10px)
+		*/
+		
+		.header {
+			background-color: #d81b60;
+			color: #ffffff;
+			justify-items: right;
+			position: fixed;
+			box-sizing: border-box;
+			top: 0;
+			left: 0;
+			width: 100%;
+			display: grid;
+			grid-template-areas: "logo  nav";
+		}
+
+		.left-header {
+			top: 0;
+			left: 0;
+			position: fixed;
+			height: 100vh;
+			width: 250px;
+		}
+
+		.footer {
+			background-color: #3a3939;
+			color: #ffffff;
+			justify-items: right;
+			position: fixed;
+			box-sizing: border-box;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			display: grid;
+			grid-template-areas: "logo  nav";
+		}
+
+		.nav {
+			display: grid;
+			grid-area: nav;
+			grid-template-columns: repeat(3, auto);
+			align-items: center;
+			justify-items: center;
+		}
+
+		.nav a {
+			padding: 15px;
+		}
+
+		.nav a:hover {
+			cursor: pointer;
+		}
+
+		.flex {
+			display: flex;
+		}
+
+		.left-footer {
+			padding: 0 15px;
+			justify-self: left;
+		}
+
+		.content {
+			padding: 40px 15px 80px 300px;
+		}
+
+		.grid-image {
+			display: grid;
+			grid-template-columns: repeat(3, auto);
+			grid-gap: 15px;
+		}
+
+		.grid-item {
+			max-width: 100%;
+		}
+
+		.test {
+			border-radius: 100%;
+			width: 250px;
+			height: 250px;
+			margin: 15px;
+			object-fit: contain;
+			box-shadow: 0 12px 6px -6px darkgray;
+			display: inline-block;
+			justify-content: center;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="header">
+		<div class="nav">
+			<a>Home</a>
+			<a>About</a>
+			<a>Contact</a>
+		</div>
+	</div>
+
+	<div class="left-header">
+		<img style="max-width: 100%;height: 70px;background-color: #d81b60;padding: 5px 15px;" src="images/adeptmind-logo-white.svg">
+		<img class="test" style="max-width: 100%;" src="images/profile-image.png">
+	</div>
+
+	<div class="content">
+		<h1>Developer at Adeptmind</h1>
+		<p>
+			Adeptmind is an AI company innovating in e-commerce search using active learning and deep learning. Its co-founders recently came out of a quite successful sale of their previous company. This time around, they raised a little too much VC capital and are looking to grow a kick-ass Silicon Valley style team right here in downtown Toronto.
+		</p>
+		<p>
+			Our current engineering efforts focus on vertical expansion: building more tools and services. Current projects ranges from creating integral service to providing command line utilities as well large scale crawling and data processing. If you are a hacker minded developer like us, you will find it at home.
+		</p>
+		<p>
+			Of course, life in a young startup can get hectic. But we spend just as much, if not more, effort to grow our engineering as well. We actively hold technical seminars, send our people to conferences and initiate manageable research project. We believe a company cannot grow until the people can. 
+		</p>
+		<h3>Gallery</h3>
+		<div class="grid-image">
+			<img class="grid-item" src="images/image1.jpg">
+			<img class="grid-item" src="images/image2.jpg">
+			<img class="grid-item" src="images/image3.jpg">
+			<img class="grid-item" src="images/image4.jpg">
+			<img class="grid-item" src="images/image5.jpg">
+			<img class="grid-item" src="images/image6.jpg">
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="left-footer">
+			<p>@2018</p>
+		</div>
+		<div class="nav">
+			<a>Home</a>
+			<a>About</a>
+			<a>Contact</a>
+		</div>
+	</div>
+</body>
+
+</html>
